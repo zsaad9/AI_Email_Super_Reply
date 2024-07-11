@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Reply Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+        }
+        #generate-reply-button, #generate-new-reply-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #generate-reply-button:hover, #generate-new-reply-button:hover {
+            background-color: #45a049;
+        }
+        #reply-container {
+            display: none;
+            margin-top: 10px;
+        }
+        #reply {
+            white-space: pre-wrap; /* Preserve whitespace */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        #new-prompt-container {
+            display: none;
+            margin-top: 10px;
+        }
+        #new-prompt {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Email Reply Generator</h1>
+    <button id="generate-reply-button">Generate Reply</button>
+    <div id="reply-container">
+        <h2>Generated Reply:</h2>
+        <div id="reply"></div>
+        <button id="generate-new-reply-button">Generate New Reply</button>
+    </div>
+    <div id="new-prompt-container">
+        <h2>Enter New Prompt:</h2>
+        <textarea id="new-prompt" rows="4" placeholder="Type your prompt here..."></textarea>
+        <button id="submit-new-prompt-button">Submit New Prompt</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
