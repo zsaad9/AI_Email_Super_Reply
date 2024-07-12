@@ -1,7 +1,7 @@
 # AI_Email_Super_Reply
 
-Email Reply Generator
-About This Project
+About This Project:
+
 The Email Reply Generator is a Chrome extension powered by AI that assists users in crafting professional and relevant email replies with minimal effort. Utilizing a Flask backend and the GPT-2 model from Hugging Face, this tool reads email threads and generates contextually appropriate responses. Users can also provide custom prompts to generate new replies, enhancing the flexibility and usefulness of the extension.
 
 Key Features
